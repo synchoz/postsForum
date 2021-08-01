@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editing A Post</title>
+</head>
+<body>
+    <h1>Edit your Post</h1>
+    <form action="/posts/<%= post._id %>?_method=PUT" method="POST"> 
+        <label for="author">Your Name</label>
+        <input type="text" id="author" name="author" value="<%= post.author %>"><br>
+        <label for="subject">Type the Subject name</label>
+        <input type="text" id="subject" name="subject" value="<%= post.subject %>"><br>
+        <label for="posted" >Date</label>
+        <input type="text" id="posted" name="posted" placeholder="dd-mm-yy" value="<%= post.posted %>"><br>
+        <label for="posttext">Write your text Below</label><br>
+        <textarea name="posttext" id="posttext" cols="60" rows="10"><%= post.posttext %></textarea><br>  
+        <button>Submit</button>
+        </form>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Post</title>
+</head>
+<body>
+    <h1>This is a new Post!</h1>
+    <form action="/posts" method="POST">
+    <label for="author">Your Name</label>
+    <input type="text" id="author" name="author"><br>
+    <label for="subject">Type the Subject name</label>
+    <input type="text" id="subject" name="subject"><br>
+    <label for="posted" >Date</label>
+    <input type="text" id="posted" name="posted" placeholder="dd-mm-yy"><br>
+    <label for="posttext">Write your text Below</label><br>
+    <textarea name="posttext" id="posttext" cols="60" rows="10"></textarea><br>  
+    <button>Submit</button>
+    </form>
+</body>
+</html>

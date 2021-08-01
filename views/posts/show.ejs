@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Details</title>
+</head>
+<body>
+    <h1>This are the post details</h1>
+    <h2><%= post.subject %></h2>
+    <table>
+        <%= post.author %> 
+        <th>posted at: <%=post.posted%></th>
+        <tr>
+            <td>user info will be filled later</td>
+            <td><p><%=post.posttext%></p></td>
+        </tr>
+    </table>
+    <a href="/<%= post._id %>/edit"><button>Edit Post</button></a>
+<a href="/"><button>Go Back</button></a>
+</body>
+<style type="text/css">
+    table {
+        border-spacing: 5px;
+      }
+    
+    table, th, td {
+        border: 1px solid black;
+      }
+      th, td {
+        padding: 15px;
+    
+      }th {
+        text-align: left;
+      }  
+    </style>
+</html>
